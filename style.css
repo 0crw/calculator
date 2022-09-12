@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap');
 
-
 *, *::before, *::after {
     font-family: 'Noto Sans JP', sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
 .title {
     text-align: center;
-    padding-top: 10px;
-    
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 26px;
 }
 
 body {
-    padding: 0;
-    margin: 0;
     background-color: #ededed;
     color: #333333;
 }
@@ -23,8 +23,8 @@ body {
     justify-content: center;
     align-content: center;
     min-height: 80vh;
-    grid-template-columns: repeat(4, 100px);
-    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+    grid-template-columns: repeat(4, 120px);
+    grid-template-rows: minmax(140px, auto) repeat(5, 110px);
 }
 
 
@@ -32,7 +32,7 @@ body {
     cursor: pointer;
     font-size: 2rem;
     border: 1px solid #333333;
-    outline: none;
+    border-radius: 0px;
     background-color: #333333;
 }
 
@@ -47,11 +47,12 @@ button {
 
 .span-two {
     grid-column: span 2;
+    color: #ee8e09;
 }
 
 .span-twoEqual {
     grid-column: span 2;
-    color: #ee8e09;
+    color: #09ee9e;
 }
 
 .display {
@@ -63,14 +64,12 @@ button {
     justify-content: space-around;
     flex-direction: column;
     padding: 12px;
-    font-size: 4rem;
     word-wrap: break-word;
     word-break: break-all;
-
 }
 
 .display .previous {
-    color:#09eeee;
+    color:#09ee9e;
     font-size: 1.5rem;
 }
 
@@ -79,4 +78,11 @@ button {
     font-size: 2.5rem;
 }
 
+a, a:visited, a:hover {
+    text-decoration: none;
+    color: #09ee9e;
+}
 
+#dotBtn:hover {
+    background-color: #333333;
+}
